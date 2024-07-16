@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">NcnnAndroidYolov8OBB</string>
+    <string-array name="model_array">
+        <item>yolov8n-obb-sim-opt-fp16</item>
+        <item>yolov8s-obb-sim-opt-fp16</item>
+    </string-array>
+    <string-array name="cpugpu_array">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+
+    <string-array name="labels">
+        <item>plane</item>
+        <item>ship</item>
+        <item>storage tank</item>
+        <item>baseball diamond</item>
+        <item>tennis court</item>
+        <item>basketball court</item>
+        <item>ground track field</item>
+        <item>harbor</item>
+        <item>bridge</item>
+        <item>large vehicle</item>
+        <item>small vehicle</item>
+        <item>helicopter</item>
+        <item>roundabout</item>
+        <item>soccer ball field</item>
+        <item>swimming pool</item>
+    </string-array>
+</resources>
