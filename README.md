@@ -14,7 +14,7 @@ git checkout v8.2.0
 
 若是用pip安装的则重新安装
 ```bash
-! pip install ultralytics==8.2.0
+pip install ultralytics==8.2.0
 ```
 ### 2. 修改推导部分的代码
 
