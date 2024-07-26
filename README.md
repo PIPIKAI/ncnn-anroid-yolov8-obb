@@ -6,17 +6,8 @@
 ![alt text](doc/Screenshot_20240716_111717_com.pipikai.github.jpg)
 
 ## 如何使用自己训练的obb模型
-### 1. 设置ultralytics版本
-若是用github安装的则
-```bash
-git checkout v8.2.0
-```
 
-若是用pip安装的则重新安装
-```bash
-pip install ultralytics==8.2.0
-```
-### 2. 修改推导部分的代码
+### 1. 修改推导部分的代码
 
 找到ultralytics\nn\modules\head.py
 - 修改 class Detect(nn.Module):中的_inference函数
@@ -71,13 +62,13 @@ def _inference(self, x):
 pip install -qe ultralytics
 ```
 
-### 3. 导出模型
+### 2. 导出模型
 
 ```bash
 # pt 转 onnx
 yolo export model=yolov8s-obb.pt format=onnx opset=11 simplify half=True
 ```
-### 4. 用ncnn导出模型
+### 3. 用ncnn导出模型
 ncnn[下载地址](https://github.com/Tencent/ncnn/releases/tag/20240410)
 
 ```bash
